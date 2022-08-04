@@ -1,0 +1,151 @@
+body {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 10px;
+  padding: 10px;
+  min-height: 550px;
+}
+nav {
+background: rgb(14, 5, 65);
+padding: 3px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: auto 5px;
+  margin: auto 3px;
+
+}nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px;
+  margin: auto 3px;
+
+}
+nav ul li:hover{
+  background: rgb(15, 112, 209);
+}
+nav ul li a {
+ display: block;
+ width:100%;
+ text-decoration: none;
+ color: white;
+}
+
+.footer {
+  margin-bottom: 0;
+}
+.h-auto-intel {
+  height: auto;
+}
+@media(min-width: 508px) {
+  .h-auto-intel {
+    height: 500px;
+  }
+  .w-sm  {
+    max-width:50% !important;;
+  }
+}
+@media(min-width: 768px) {
+  .w-md  {
+    max-width:25% !important;;
+  }
+}
+/* styling the body */
+
+.m-0 {
+  margin: 0;
+}
+/* slider cusomization */
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-top: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 30rem;
+}
+.carousel-item > img {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+/* .marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+} */
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/* adding images to the slider */
+.carousel-item:nth-child(1) {
+  background-image: url('../public/images/org.jpg');
+  background-position: fixed;
+  background-size: cover;
+}
+.carousel-item:nth-child(2) {
+  background-image: url('../public/images/org.jpg');
+  background-position: fixed;
+  background-size: cover;
+}
+.carousel-item:nth-child(3) {
+  background-image: url('../public/images/org.jpg');
+  background-position: fixed;
+  background-size: cover;
+}
+.border-dark {
+  border: 1px solid gray;
+}
+.text-underline {
+  text-decoration: underline;
+}
+/* styling the inputs for the register component */
+.border label {
+  position: absolute;
+}
+.border input:focus ~ label{
+  position: relative;
+  display: none;
+}
+.shopper {
+  color: rgb(217, 114, 5);
+}
