@@ -1,4 +1,9 @@
-body {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body {
   margin:0;
   padding: 0;
   box-sizing: border-box;
@@ -12,21 +17,35 @@ nav {
 background: rgb(14, 5, 65);
 padding: 3px;
 }
-nav ul li{
+nav ul > li{
+  position: relative;
   list-style-type: none;
   display: inline-block;
-  padding: auto 5px;
-  margin: auto 3px;
-
-}nav ul li{
-  list-style-type: none;
-  display: inline-block;
-  padding: 5px;
-  margin: auto 3px;
-
+  transition: all 2s linear;
+  margin: auto;
+  min-height: 100%;
+  bottom: 0;
+}
+nav ul > li::before, li::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 0;
+  transition: 2s cubic-bezier(0, 0.99, 1, 1);
+  background:rgb(23, 150, 173);
+  /* background: red; */
+}
+nav ul li:hover::before{
+  width:50%;
+  left: 0;
+}
+nav ul li:hover::after{
+width:50%;
 }
 nav ul li:hover{
-  background: rgb(15, 112, 209);
+  background: rgb(69, 197, 65);
 }
 nav ul li a {
  display: block;
@@ -148,4 +167,15 @@ nav ul li a {
 }
 .shopper {
   color: rgb(217, 114, 5);
+}
+/* styling the dropdown menu  */
+.arrow-down{
+  position: absolute;
+  right: -5px;
+  bottom: 50%;
+  height: 0;
+  width: 0;
+  border-top: 5px solid aqua;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
 }
