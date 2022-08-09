@@ -4,16 +4,16 @@ import { useState } from 'react';
 import axios from 'axios';
 const Register = () => {
     const [userDetails, setUserDetails] = useState({
-        name: '', email :'', phone: '', password: '', password_confirmation: ''
+        name: '', email: '', phone: '', password: '', password_confirmation: ''
     });
     const setDetails = (e) => {
-        setUserDetails({...userDetails, [e.target.name] : e.target.value});        
+        setUserDetails({...userDetails, [e.target.name]:  e.target.value});        
     }
     const saveUser = async (e) => {
         e.preventDefault();
         //saving the user
-        axios.get('http://localhost/LaravelSanctumApi/public/sanctum/csrf-cookie').then(response => {
-        axios.post('http://localhost/LaravelSanctumApi/public/api/user/register', userDetails).then((res) => {
+        axios.get('http//localhost/LaravelSanctumApi/public/sanctum/csrf-cookie').then(response => {
+        axios.post('http//localhost/LaravelSanctumApi/public/api/user/register', userDetails).then((res) => {
             console.log(res);
         })
         })
@@ -32,24 +32,24 @@ const Register = () => {
                         </div>
                     </div>
                     <div className='mb-2'>
-                        <label>Username:</label>
-                        <input type='text' name='name' placeholder='Enter your username' onChange={setDetails} className='form-control' value={userDetails.name}/>
+                        <input type='text' name='name' onChange={setDetails} className='form-control' value={userDetails.name}/>
+                        <label classname="placeholder">Username</label>
                     </div>
                     <div className='mb-2'>
-                        <label>Email:</label>
-                        <input type='email' name='email' placeholder='Enter your email' onChange={setDetails} className='form-control' value={userDetails.email}/>
+                        <input type='email' name='email' onChange={setDetails} className='form-control' value={userDetails.email}/>
+                        <label classname="placeholder">Email</label>
                     </div>
                     <div className='mb-2'>
-                        <label>Phone:</label>
-                        <input type='text' name='phone' placeholder='Enter your phone' onChange={setDetails} className='form-control' value={userDetails.phone}/>
+                        <input type='text' name='phone'  onChange={setDetails} className='form-control' value={userDetails.phone}/>
+                        <label classname="placeholder">Phone</label>
                     </div>
                     <div className='mb-2'>
-                        <label>Password:</label>
-                        <input type='password' name='password' placeholder='Enter your secret' onChange={setDetails} className='form-control' value={userDetails.password}/>
+                        <input type='password' name='password' onChange={setDetails} className='form-control' value={userDetails.password}/>
+                        <label classname="placeholder">Password</label>
                     </div>
                     <div className='mb-2'>
-                        <label>Confirm Password:</label>
-                        <input type='password' name='password_confirmation' placeholder='Confirm your secret' onChange={setDetails} className='form-control' value={userDetails.password_confirmation}/>
+                        <input type='password' name='password_confirmation' onChange={setDetails} className='form-control' value={userDetails.password_confirmation}/>
+                        <label classname="placeholder">Confirm Password</label>
                     </div>
                     <div className='p-2'>
                         <button className='btn btn-outline-primary' onClick={saveUser}>Signup</button>

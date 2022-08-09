@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
   body {
+    width: 100vw;
+    overflow-x: hidden;
   margin:0;
   padding: 0;
   box-sizing: border-box;
@@ -90,6 +92,10 @@ nav ul li a {
 /* Carousel base class */
 .carousel {
   margin-top: 4rem;
+}
+.width-carousel{
+  width: 70vw;
+  background-size: cover;
 }
 /* Since positioning the image, we need to help out the caption */
 
@@ -178,4 +184,57 @@ nav ul li a {
   border-top: 5px solid aqua;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
+}
+div.dropdown-parent{
+  position: absolute;
+  margin: 0;
+  top: 100%;
+  width: 200px;
+  padding: 20px;
+  display: none;
+height: 100px;
+}
+.dropdown-child{
+  position: absolute;
+  background: rgb(181, 170, 170);
+  width: 200px;
+  border-radius: 10px;
+  
+}
+.dropdown-child > li{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+.dropdown-child > li:hover{
+  background: rgb(25, 203, 159);
+}
+.dropdown-toggler:hover .dropdown-parent{
+  display: block;
+}
+.arrow-up{
+  position: absolute;
+  left:8px;
+  top:-9px;
+  border-bottom: 9px solid rgb(181, 170, 170);
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+}
+form .mb-2{
+position: relative;
+margin-bottom: 20px!important;
+}
+label{
+  position: absolute;
+  top:2px;
+  left: 10px;
+  transition: all .3s;
+  color: rgb(102, 102, 229);
+}
+input.form-control{
+  padding: 10px;
+}
+input.form-control:focus + label{
+top: -35%;
+background-color: white;
 }

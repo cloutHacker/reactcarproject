@@ -35,7 +35,9 @@ const Nav = ({ notifications, wishlist_class, wishlist }) => {
               <li className="nav-item dropdown-toggler" key='6'>
                 <div classname="d-flex"><Link to={`#`}>Account<span className="fa fa-user"></span></Link></div>
                 <span className="arrow-down"></span>
-                <ul class='dropdown-menu'>
+                <div className="dropdown-parent">
+                  <ul class='dropdown-child'>
+                    <span className="arrow-up"></span>
                   <li className="nav-item" key='2'>
                     <div className="d-flex"><Link to={`/register`}>Register<span className="fa fa-user"></span></Link></div>
                   </li>
@@ -43,6 +45,7 @@ const Nav = ({ notifications, wishlist_class, wishlist }) => {
                     <div className="d-flex"><Link to={`/login`}>Login<span className="fa fa-user-circle"></span></Link></div>
                   </li>
                 </ul>
+                </div>
               </li>
             </ul>
           </div>
