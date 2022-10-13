@@ -70,9 +70,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ## So let's have an overview of what is going on on this project.
+This project is pretty simple.
 <img src="https://github.com/cloutHacker/projectImages/blob/master/reactcarproject/screenshot.png" />
 This project is easy to set up and run.
 I will be making updates on this project soon and coming up with new ideas.#
 I just want to say thank to you all for supporting me.🙌
 🙌
+
 # This project is free to change and update making it better.
